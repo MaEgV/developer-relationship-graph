@@ -1,11 +1,8 @@
 # Developer relationship graph visualization  
 
-----
-
 
 ## Modules
 
-----
 
 ### Loader 
 
