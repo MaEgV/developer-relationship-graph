@@ -49,9 +49,11 @@ Creating an instance of the Graph class of the Network package and adding nodes 
     
     **Feature of the work contexts intersections** calculated as the number of files that were changed by both developers, divided by the sum of the number of occurrences of each file in the contexts of the other developers. The division is necessary to prevent the appearance of links in developers who work in different contexts, but for example, once corrected readme. This way, the popular repository files will lower the link weight.  
     
-    **Feature of the intersection of activity intervals** is calculated as thesum of modules of differences of corresponding boundaries (|a1-a2|+|b1-b2|). This feature allows you to bring together developers whose activity time is the same. This may correspond to simultaneous recruitment for a project or active development of a feature. On the other hand, if a developer is equally active for the entire lifetime of the repository, then often he will be far from those who were active for a short time. In addition, those who were active for a short time, but at different intervals, will also be far from each other.  
+    **Feature of the intersection of activity intervals** is calculated as thesum of modules of differences of corresponding boundaries  
+    (|a1-a2|+|b1-b2|). This feature allows you to bring together developers whose activity time is the same. This may correspond to simultaneous recruitment for a project or active development of a feature. On the other hand, if a developer is equally active for the entire lifetime of the repository, then often he will be far from those who were active for a short time. In addition, those who were active for a short time, but at different intervals, will also be far from each other.  
     
-4) **Adding fetures in graph**
+4) **Adding fetures in graph**  
+
 In this part, a linear combination of features is compiled and those that pass the minimum threshold are selected. They are added to the graph with the weight label. Weights are normilized to [0,1] interval.  
 
 5) **Graph rendering**
