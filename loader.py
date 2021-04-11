@@ -18,7 +18,6 @@ def load_commits(repo: str, branches: list, user: str):
     response_length = 100
     res = list()
 
-    # 'auth': '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'
     last_sha = 'master'
     counter = 0
     while True:
@@ -71,13 +70,9 @@ resp = requests.get(f"https://api.github.com/repos/{rep}/branches",
 df = pd.DataFrame.from_records(resp)
 branches = list(df['name'])
 
-# for login in get_users_list(users_path+'users.csv'):
-#     print(login)
-#     load_commits(rep, branches, login)Loade
-#     print('ok')ga
 
 counter = 0
-for login in get_users_list(users_path+'users.csv')[1:2]:
+for login in get_users_list(users_path+'users.csv'):
     print(counter, login)
     counter += 1
     load_files(commits_path+login+'_commits.csv', changes_path+login+'_files.csv')
