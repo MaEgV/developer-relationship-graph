@@ -28,15 +28,15 @@ The functionality of the module is implemented in the file [graph_visualization.
 1) **Import, helper functions implementation and constants defining**
 In this part, the necessary libraries are imported. Functions  that simplify the solution of problems in the lower cells are implemented. Also, here are all the parameters that regulate the operation of the program.  
 Description of parameters:
-    * ```python min_value_for_edge``` - the lower threshold of the weight value for adding an edge to the drawing. Allows you to filter insignificant links in the graph;
-    * ```python weights_params = {'file_coef': ..., 'time_coef': ...}``` - a dictionary with coefficients of a linear combination of features to form a vector of weights;
-    * ```python node_size_coef, edge_width_coef``` - sizes of nodes and edges for rendering;
-    * ```python first_date``` - repository creation day;
-    * ```python last_date``` - data upload day;
-    * ```python sigma_num``` - the number of standard deviations from the mean in the interval;
-    * ```python users_filename ``` - file that contains information about developers;
-    * ```python changes_path ``` - path to files with information about changes in files from each developer;
-    * ```python commits_path``` - path to files with information about commits of developers.
+    * ```Python min_value_for_edge``` - the lower threshold of the weight value for adding an edge to the drawing. Allows you to filter insignificant links in the graph;
+    * ```Python weights_params = {'file_coef': ..., 'time_coef': ...}``` - a dictionary with coefficients of a linear combination of features to form a vector of weights;
+    * ```Python node_size_coef, edge_width_coef``` - sizes of nodes and edges for rendering;
+    * ```Python first_date``` - repository creation day;
+    * ```Python last_date``` - data upload day;
+    * ```Python sigma_num``` - the number of standard deviations from the mean in the interval;
+    * ```Python users_filename ``` - file that contains information about developers;
+    * ```Python changes_path ``` - path to files with information about changes in files from each developer;
+    * ```Python commits_path``` - path to files with information about commits of developers.
 2) **Graph creating**
 Creating an instance of the Graph class of the Network package and adding nodes for each developer.
 3) **Data proccessing**
